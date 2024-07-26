@@ -1,0 +1,111 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+    color: #333;
+}
+
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+h2 {
+    color: #0056b3;
+    margin-bottom: 20px;
+}
+
+.estoque, .pesquisa, .historico {
+    margin-bottom: 20px;
+}
+
+button {
+    margin: 5px;
+    padding: 10px 20px;
+    background-color: #ffd700;
+    color: #0056b3;
+    border: 1px solid #0056b3;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+button:hover {
+    background-color: #0056b3;
+    color: #ffd700;
+}
+
+button.retirar {
+    background-color: #0056b3;
+    color: #ffd700;
+    border: 1px solid #ffd700;
+}
+
+button.retirar:hover {
+    background-color: #ffd700;
+    color: #0056b3;
+}
+
+input[type="text"] {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    width: calc(100% - 22px); /* Subtrai a largura do padding e border */
+}
+
+.lista-itens, .lista-historico {
+    list-style-type: none;
+    padding: 0;
+}
+
+.item-container {
+    background-color: #e0f7fa;
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #b3e5fc;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.lista-itens li, .lista-historico li {
+    color: #0056b3;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.lista-itens li.moveis, .lista-historico li.moveis {
+    color: #0056b3;
+}
+
+.lista-itens li.construcao, .lista-historico li.construcao {
+    color: #0056b3;
+}
+
+.lista-itens li.eletrodomesticos, .lista-historico li.eletrodomesticos {
+    color: #0056b3;
+}
+
+.historico-container {
+    display: none;
+    background-color: #f0f4c3;
+    margin-top: 20px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #cddc39;
+}
+
+.historico-container h3 {
+    margin-top: 0;
+    color: #7cb342;
+}
